@@ -1,6 +1,16 @@
 import Button from "./Button";
-import { scan, analysis, down } from "../assets";
+import {
+  scan,
+  analysis,
+  down,
+  paypal,
+  visa,
+  spotify,
+  appleLogo,
+} from "../assets";
 import { months } from "../constants";
+
+const logos = [paypal, visa, spotify, appleLogo];
 
 const ScanCard = () => (
   <div className="bg-black-gradient p-4 w-max rounded-2xl flex flex-col justify-center items-center">
@@ -58,35 +68,54 @@ const AnalysisCard = () => (
 );
 
 const PaymentCard = () => (
-  <div className="bg-black-gradient p-3">
-    <div className="flex items-center ">
-      <h2>Pay Method</h2>
+  <div className="bg-black-gradient p-4 rounded-xl w-max">
+    <div className="flex items-center  justify-between mb-6">
+      <h2 className="font-bold font-poppins text-[24px] xs:text-[16px]">
+        Pay Method
+      </h2>
       <img src={down} />
     </div>
-    <div></div>
+    <div className="flex ">
+      {logos.map((logo, index) => (
+        <div
+          key={index}
+          className={`w-[50px] h-[50px] flex justify-center items-center  bg-white overflow-hidden 
+           rounded-lg ${index === 0 ? "p-4" : ""} ${
+            index === logos.length - 1 ? "" : "mx-2"
+          }`}
+        >
+          <img className="object-contain" src={logo} />
+        </div>
+      ))}
+    </div>
   </div>
 );
 const CardDeal = () => (
-  <section className="text-white">
-    <div className="my-[100px]">
+  <section className="text-white  md:flex justify-between ">
+    <div className="my-[100px] mr-[50px]">
       <h1 className="text-[33px] xs:text-[40px] md:text-[48px] leading-[140%] md:leading-[160%] font-bold font-poppins">
         {" "}
         Find a better card deal in few easy steps.
       </h1>
-      <p className="text-dimWhite my-[24px] font-normal font-poppins text-[16px] md:text-[18px] leading-[] md:leading-[160%]">
+      <p className="text-dimWhite my-[24px] font-normal font-poppins text-[16px] md:text-[18px] leading-[120%] md:leading-[160%]">
         Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>
       <Button name="Get Started" />
     </div>
-    <div>
-      <ScanCard />
-    </div>
-    <div>
-      <AnalysisCard />
-    </div>
-    <div>
-      <PaymentCard />
+
+    <div className="flex flex-col  items-center">
+      <div className="flex flex-1 items-center justify-between">
+        <div>
+          <ScanCard />
+        </div>
+        <div className="ml-10">
+          <AnalysisCard />
+        </div>
+      </div>
+      <div className="mt-8">
+        <PaymentCard />
+      </div>
     </div>
   </section>
 );
