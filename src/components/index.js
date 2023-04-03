@@ -10,6 +10,9 @@ import Testimonial from "./Testimonial";
 import Hero from "./Hero";
 import Button from "./Button";
 import GetStarted from "./GetStarted";
+import FeatureCard from "./FeatureCard";
+import LastTrasaction from "./LastTrasaction";
+import Paypal from "./Paypal";
 
 export {
   Navbar,
@@ -24,4 +27,7 @@ export {
   Hero,
   Button,
   GetStarted,
+  FeatureCard,
+  LastTrasaction,
+  Paypal,
 };

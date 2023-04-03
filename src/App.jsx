@@ -20,11 +20,11 @@ const App = () => (
       </div>
     </div>
     <div className={`${styles.flexStart}  bg-primary`}>
-      <div className={`${styles.boxWidth}`}>
+      <div className={`${styles.boxWidth} mt-14`}>
         <Hero />
       </div>
     </div>
-    <div className={` ${styles.paddingX} bg-primary`}>
+    <div className={` ${styles.flexStart} xl:px-0 sm:px-16 px-6  bg-primary`}>
       <div className={`${styles.boxWidth}`}>
         <Stats />
         <Buisness />

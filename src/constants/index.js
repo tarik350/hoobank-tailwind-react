@@ -13,6 +13,11 @@ import {
   send,
   shield,
   star,
+  arrowUp,
+  arrowdown,
+  netflix,
+  dribble,
+  manulife,
 } from "../assets";
 
 export const navLinks = [
@@ -210,3 +215,29 @@ export const clients = [
     logo: dropbox,
   },
 ];
+
+export const lastTrasactions = [
+  {
+    name: "Dribble pro",
+    icon: dribble,
+    days: "15 Days ago",
+    arrow: arrowdown,
+    balance: "-$250,93",
+  },
+  {
+    name: "Netflix",
+    icon: netflix,
+    days: "14 Days ago",
+    arrow: arrowdown,
+    balance: "-$250,93",
+  },
+  {
+    name: "Manulife Cash",
+    icon: manulife,
+    days: "13 Days ago",
+    arrow: arrowUp,
+    balance: "-$250,93",
+  },
+];
+
+export const months = ["jan", "fab", "mar", "apr", "jun", "jul"];

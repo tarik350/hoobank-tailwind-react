@@ -1,10 +1,10 @@
-import { arrowUp } from "../assets";
+import { arrowGetStarted } from "../assets";
 import styles from "../styles";
 
 const GetStarted = () => {
   return (
     <div
-      className={` border p-[2px] bg-blue-gradient rounded-full w-[140px] h-[140px] ${styles.flexCenter}`}
+      className={` border hover:cursor-pointer  p-[2px] bg-blue-gradient rounded-full w-[140px] h-[140px] ${styles.flexCenter}`}
     >
       <div
         className={` bg-black  rounded-full w-full h-full flex-col  ${styles.flexCenter}`}
@@ -13,7 +13,10 @@ const GetStarted = () => {
           <p className="text-[18px] font-poppins font-medium leading-[23px] text-gradient">
             Get
           </p>
-          <img className=" object-contain w-[23px] h-[23px] " src={arrowUp} />
+          <img
+            className=" object-contain w-[23px] h-[23px] "
+            src={arrowGetStarted}
+          />
         </div>
         <p className="text-[18px] font-poppins font-medium leading-[23px] text-gradient">
           started
