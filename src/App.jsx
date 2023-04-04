@@ -32,8 +32,8 @@ const App = () => (
         <Stats />
         <Buisness />
         <Billing />
-        <div className=" flex  ">
-          <div className=" w-[1000px] absolute h-[1000px] blue__gradinet rounded-full  left-[80%]    xs:bottom-20   bottom-80   blue__gradient"></div>
+        <div className=" flex z-0 ">
+          <div className=" w-[1000px] absolute h-[1000px] blue__gradinet rounded-full  left-[90%]    xs:bottom-20   bottom-80   blue__gradient"></div>
         </div>
         <CardDeal />
         <Testimonial />
