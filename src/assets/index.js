@@ -37,8 +37,10 @@ import appleLogo from "./appleLogo.png";
 import spotify from "./Shopify-Logo.png";
 import visa from "./visa.png";
 import down from "./down.png";
+import quote from "./quote.svg";
 
 export {
+  quote,
   appleLogo,
   spotify,
   visa,

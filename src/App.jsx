@@ -24,11 +24,17 @@ const App = () => (
         <Hero />
       </div>
     </div>
-    <div className={` ${styles.flexStart} xl:px-0 sm:px-16 px-6  bg-primary`}>
-      <div className={`${styles.boxWidth}`}>
+
+    <div
+      className={` ${styles.flexStart} xl:px-0 sm:px-16 px-6  bg-primary relative`}
+    >
+      <div className={`${styles.boxWidth} `}>
         <Stats />
         <Buisness />
         <Billing />
+        <div className=" flex  ">
+          <div className=" w-[1000px] absolute h-[1000px] blue__gradinet rounded-full  left-[80%]    xs:bottom-20   bottom-80   blue__gradient"></div>
+        </div>
         <CardDeal />
         <Testimonial />
         <Clients />

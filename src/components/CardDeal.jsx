@@ -102,7 +102,7 @@ const CardDeal = () => (
         {" "}
         Find a better card deal in few easy steps.
       </h1>
-      <p className="text-dimWhite my-[24px] font-normal font-poppins text-[16px] md:text-[18px] leading-[120%] md:leading-[160%]">
+      <p className="text-dimWhite my-[24px] font-normal font-poppins text-[16px] md:text-[18px] leading-[140%] md:leading-[160%]">
         Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis
         aliquet eget mauris tortor.ç Aliquet ultrices ac, ametau.
       </p>

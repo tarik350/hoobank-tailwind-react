@@ -4,7 +4,7 @@ import { google, apple } from "../assets";
 const Billing = () => {
   return (
     <section className=" flex flex-col md:flex-row md:items-center justify-center   ">
-      <div className="flex-1 flex">
+      <div className="flex flex-1">
         <div className="relative mt-[320px] mb-[100px]   ">
           <div className="w-full  h-full absolute bottom-[180px] md:bottom-[200px] md:left-[280px] left-[120px]">
             <Paypal />
@@ -34,7 +34,7 @@ const Billing = () => {
         </div>
       </div>
 
-      <div className="text-white md:w-[40%] flex flex-col justify-center  items-stretch  ">
+      <div className="flex-1 w-[35%] text-white  flex flex-col justify-center  items-stretch  ">
         <h2 className="font-poppins font-bold text-[33px] xs:text-[40px] md:text-[48px] leading-[140%] md:leading-[160%]">
           Easily control your billing & invoicing.
         </h2>
