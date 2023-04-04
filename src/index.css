@@ -74,6 +74,18 @@
   );
 }
 
+.bg-dimBlue-gradinet {
+  background: linear-gradient(
+    157.81deg,
+    rgba(222, 249, 250, 0.3) -43.27%,
+    rgba(190, 243, 245, 0.3) -21.24%,
+    rgba(157, 237, 240, 0.3) 12.19%,
+    rgba(125, 231, 235, 0.3) 29.82%,
+    rgba(92, 225, 230, 0.3) 51.94%,
+    rgba(51, 187, 207, 0.3) 90.29%
+  );
+}
+
 .bg-black-gradient {
   background: linear-gradient(
     144.39deg,

@@ -1,5 +1,4 @@
 const Button = ({ name, border, paypal }) => {
-  console.log(paypal);
   return (
     <button
       className={`${
